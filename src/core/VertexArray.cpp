@@ -1,11 +1,12 @@
 #include <core/VertexArray.h>
+#include <utils/GLDebug.h>
 
 VertexArray::VertexArray() {
-    glGenVertexArrays(1, &id);
+    GLCall(glGenVertexArrays(1, &id));
 }
 
 VertexArray::~VertexArray() {
-    glDeleteVertexArrays(1, &id);
+    GLCall(glDeleteVertexArrays(1, &id));
 }
 
 void VertexArray::addBuffer(const VertexBuffer& vb, const VertexBufferLayout& layout) {
@@ -18,27 +19,27 @@ void VertexArray::addBuffer(const VertexBuffer& vb, const VertexBufferLayout& la
     for(unsigned int i = 0; i < elements.size(); ++i) {
         const auto& element = elements[i];
         
-        glEnableVertexAttribArray(i);
+        GLCall(glEnableVertexAttribArray(i));
 
-        glVertexAttribPointer(
+        GLCall(glVertexAttribPointer(
             i,
             element.count,
             element.type,
             element.normalize,
             layout.getStride(),
             (const void*) offset
-        );
+        ));
 
         offset += element.count * VertexBufferElement::getSizeOfType(element.type);
     }
 }
 
 void VertexArray::bind() const {
-    glBindVertexArray(id);
+    GLCall(glBindVertexArray(id));
 }
 
 void VertexArray::unbind() const {
-    glBindVertexArray(0);
+    GLCall(glBindVertexArray(0));
 }
 
 unsigned int VertexArray::getID() const {

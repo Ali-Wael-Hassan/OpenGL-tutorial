@@ -5,7 +5,7 @@ events:
     kind: "message-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:212 (message)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     message: |
       The system is: Windows - 10.0.26200 - AMD64
   -
@@ -16,7 +16,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -100,7 +100,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler:  
@@ -110,9 +110,9 @@ events:
       The output was:
       0
       MSBuild version 17.14.40+3e7442088 for .NET Framework
-      Build started 18-Apr-26 6:20:30 PM.
+      Build started 25-Apr-26 7:16:18 PM.
       
-      Project "D:\\GitHub Repos\\OpenGl\\build\\CMakeFiles\\4.2.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      Project "D:\\GitHub Repos\\OpenGL-tutorial\\build\\CMakeFiles\\4.2.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
@@ -125,7 +125,7 @@ events:
         CMakeCCompilerId.c
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
-        CompilerIdC.vcxproj -> D:\\GitHub Repos\\OpenGl\\build\\CMakeFiles\\4.2.0-rc2\\CompilerIdC\\CompilerIdC.exe
+        CompilerIdC.vcxproj -> D:\\GitHub Repos\\OpenGL-tutorial\\build\\CMakeFiles\\4.2.0-rc2\\CompilerIdC\\CompilerIdC.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
@@ -133,13 +133,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
-      Done Building Project "D:\\GitHub Repos\\OpenGl\\build\\CMakeFiles\\4.2.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      Done Building Project "D:\\GitHub Repos\\OpenGL-tutorial\\build\\CMakeFiles\\4.2.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.57
+      Time Elapsed 00:00:00.49
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -147,7 +147,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
-        D:/GitHub Repos/OpenGl/build/CMakeFiles/4.2.0-rc2/CompilerIdC/CompilerIdC.exe
+        D:/GitHub Repos/OpenGL-tutorial/build/CMakeFiles/4.2.0-rc2/CompilerIdC/CompilerIdC.exe
       
   -
     kind: "find-v1"
@@ -156,7 +156,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     mode: "program"
     variable: "_CMAKE_TOOL_WITH_PATH"
     description: "Path to a program."
@@ -295,7 +295,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     mode: "program"
     variable: "_CMAKE_TOOL_WITH_PATH"
     description: "Path to a program."
@@ -590,7 +590,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     mode: "program"
     variable: "CMAKE_LINKER"
     description: "Path to a program."
@@ -727,7 +727,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     mode: "program"
     variable: "CMAKE_MT"
     description: "Path to a program."
@@ -1022,7 +1022,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     mode: "program"
     variable: "CMAKE_AR"
     description: "Path to a program."
@@ -1162,7 +1162,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -1246,7 +1246,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler:  
@@ -1256,9 +1256,9 @@ events:
       The output was:
       0
       MSBuild version 17.14.40+3e7442088 for .NET Framework
-      Build started 18-Apr-26 6:20:30 PM.
+      Build started 25-Apr-26 7:16:19 PM.
       
-      Project "D:\\GitHub Repos\\OpenGl\\build\\CMakeFiles\\4.2.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      Project "D:\\GitHub Repos\\OpenGL-tutorial\\build\\CMakeFiles\\4.2.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
@@ -1271,7 +1271,7 @@ events:
         CMakeCXXCompilerId.cpp
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> D:\\GitHub Repos\\OpenGl\\build\\CMakeFiles\\4.2.0-rc2\\CompilerIdCXX\\CompilerIdCXX.exe
+        CompilerIdCXX.vcxproj -> D:\\GitHub Repos\\OpenGL-tutorial\\build\\CMakeFiles\\4.2.0-rc2\\CompilerIdCXX\\CompilerIdCXX.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -1279,13 +1279,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Done Building Project "D:\\GitHub Repos\\OpenGl\\build\\CMakeFiles\\4.2.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      Done Building Project "D:\\GitHub Repos\\OpenGL-tutorial\\build\\CMakeFiles\\4.2.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.53
+      Time Elapsed 00:00:00.48
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -1293,7 +1293,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        D:/GitHub Repos/OpenGl/build/CMakeFiles/4.2.0-rc2/CompilerIdCXX/CompilerIdCXX.exe
+        D:/GitHub Repos/OpenGL-tutorial/build/CMakeFiles/4.2.0-rc2/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "find-v1"
@@ -1302,7 +1302,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     mode: "program"
     variable: "_CMAKE_TOOL_WITH_PATH"
     description: "Path to a program."
@@ -1600,7 +1600,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC.cmake:553 (__windows_compiler_msvc_enable_rc)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCInformation.cmake:48 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     mode: "program"
     variable: "CMAKE_RC_COMPILER"
     description: "RC compiler"
@@ -1676,9 +1676,9 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files/OpenGLBasic/bin/"
-      - "C:/Program Files/OpenGLBasic/sbin/"
-      - "C:/Program Files/OpenGLBasic/"
+      - "C:/Program Files (x86)/OpenGLBasic/bin/"
+      - "C:/Program Files (x86)/OpenGLBasic/sbin/"
+      - "C:/Program Files (x86)/OpenGLBasic/"
     searched_directories:
       - "C:/Users/Ali/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.com"
       - "C:/Users/Ali/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.exe"
@@ -1863,15 +1863,15 @@ events:
       - "C:/Program Files/CMake/rc.com"
       - "C:/Program Files/CMake/rc.exe"
       - "C:/Program Files/CMake/rc"
-      - "C:/Program Files/OpenGLBasic/bin/rc.com"
-      - "C:/Program Files/OpenGLBasic/bin/rc.exe"
-      - "C:/Program Files/OpenGLBasic/bin/rc"
-      - "C:/Program Files/OpenGLBasic/sbin/rc.com"
-      - "C:/Program Files/OpenGLBasic/sbin/rc.exe"
-      - "C:/Program Files/OpenGLBasic/sbin/rc"
-      - "C:/Program Files/OpenGLBasic/rc.com"
-      - "C:/Program Files/OpenGLBasic/rc.exe"
-      - "C:/Program Files/OpenGLBasic/rc"
+      - "C:/Program Files (x86)/OpenGLBasic/bin/rc.com"
+      - "C:/Program Files (x86)/OpenGLBasic/bin/rc.exe"
+      - "C:/Program Files (x86)/OpenGLBasic/bin/rc"
+      - "C:/Program Files (x86)/OpenGLBasic/sbin/rc.com"
+      - "C:/Program Files (x86)/OpenGLBasic/sbin/rc.exe"
+      - "C:/Program Files (x86)/OpenGLBasic/sbin/rc"
+      - "C:/Program Files (x86)/OpenGLBasic/rc.com"
+      - "C:/Program Files (x86)/OpenGLBasic/rc.exe"
+      - "C:/Program Files (x86)/OpenGLBasic/rc"
     found: false
     search_context:
       ENV{PATH}:
@@ -1934,23 +1934,23 @@ events:
         - "D:\\Vulkan\\Bin"
         - "D:\\SDL\\sdl2\\bin"
         - "C:\\Users\\Ali\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/OpenGLBasic"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/OpenGLBasic"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/OpenGLBasic"
+        - "C:/Program Files (x86)/OpenGLBasic"
   -
     kind: "try_compile-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/GitHub Repos/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-sessu1"
-      binary: "D:/GitHub Repos/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-sessu1"
+      source: "D:/GitHub Repos/OpenGL-tutorial/build/CMakeFiles/CMakeScratch/TryCompile-7twwm5"
+      binary: "D:/GitHub Repos/OpenGL-tutorial/build/CMakeFiles/CMakeScratch/TryCompile-7twwm5"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1959,39 +1959,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/GitHub Repos/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-sessu1'
+        Change Dir: 'D:/GitHub Repos/OpenGL-tutorial/build/CMakeFiles/CMakeScratch/TryCompile-7twwm5'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c9fa8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2b132.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 18-Apr-26 6:20:31 PM.
+        Build started 25-Apr-26 7:16:19 PM.
         
-        Project "D:\\GitHub Repos\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sessu1\\cmTC_c9fa8.vcxproj" on node 1 (default targets).
+        Project "D:\\GitHub Repos\\OpenGL-tutorial\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7twwm5\\cmTC_2b132.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\GitHub Repos\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sessu1\\Debug\\".
-          Creating directory "cmTC_c9fa8.dir\\Debug\\cmTC_c9fa8.tlog\\".
+          Creating directory "D:\\GitHub Repos\\OpenGL-tutorial\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7twwm5\\Debug\\".
+          Creating directory "cmTC_2b132.dir\\Debug\\cmTC_2b132.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_c9fa8.dir\\Debug\\cmTC_c9fa8.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_c9fa8.dir\\Debug\\cmTC_c9fa8.tlog\\unsuccessfulbuild".
+          Creating "cmTC_2b132.dir\\Debug\\cmTC_2b132.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_2b132.dir\\Debug\\cmTC_2b132.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_c9fa8.dir\\Debug\\\\" /Fd"cmTC_c9fa8.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_2b132.dir\\Debug\\\\" /Fd"cmTC_2b132.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35222 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_c9fa8.dir\\Debug\\\\" /Fd"cmTC_c9fa8.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_2b132.dir\\Debug\\\\" /Fd"cmTC_2b132.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\GitHub Repos\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sessu1\\Debug\\cmTC_c9fa8.exe" /INCREMENTAL /ILK:"cmTC_c9fa8.dir\\Debug\\cmTC_c9fa8.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/GitHub Repos/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-sessu1/Debug/cmTC_c9fa8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/GitHub Repos/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-sessu1/Debug/cmTC_c9fa8.lib" /MACHINE:X64  /machine:x64 cmTC_c9fa8.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_c9fa8.vcxproj -> D:\\GitHub Repos\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sessu1\\Debug\\cmTC_c9fa8.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\GitHub Repos\\OpenGL-tutorial\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7twwm5\\Debug\\cmTC_2b132.exe" /INCREMENTAL /ILK:"cmTC_2b132.dir\\Debug\\cmTC_2b132.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/GitHub Repos/OpenGL-tutorial/build/CMakeFiles/CMakeScratch/TryCompile-7twwm5/Debug/cmTC_2b132.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/GitHub Repos/OpenGL-tutorial/build/CMakeFiles/CMakeScratch/TryCompile-7twwm5/Debug/cmTC_2b132.lib" /MACHINE:X64  /machine:x64 cmTC_2b132.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_2b132.vcxproj -> D:\\GitHub Repos\\OpenGL-tutorial\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7twwm5\\Debug\\cmTC_2b132.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_c9fa8.dir\\Debug\\cmTC_c9fa8.tlog\\unsuccessfulbuild".
-          Touching "cmTC_c9fa8.dir\\Debug\\cmTC_c9fa8.tlog\\cmTC_c9fa8.lastbuildstate".
-        Done Building Project "D:\\GitHub Repos\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sessu1\\cmTC_c9fa8.vcxproj" (default targets).
+          Deleting file "cmTC_2b132.dir\\Debug\\cmTC_2b132.tlog\\unsuccessfulbuild".
+          Touching "cmTC_2b132.dir\\Debug\\cmTC_2b132.tlog\\cmTC_2b132.lastbuildstate".
+        Done Building Project "D:\\GitHub Repos\\OpenGL-tutorial\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7twwm5\\cmTC_2b132.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.51
+        Time Elapsed 00:00:00.47
         
       exitCode: 0
   -
@@ -1999,7 +1999,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
@@ -2017,7 +2017,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     message: |
       Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
       Microsoft (R) Incremental Linker Version 14.44.35222.0
@@ -2027,12 +2027,12 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/GitHub Repos/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-s47xgv"
-      binary: "D:/GitHub Repos/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-s47xgv"
+      source: "D:/GitHub Repos/OpenGL-tutorial/build/CMakeFiles/CMakeScratch/TryCompile-oj1476"
+      binary: "D:/GitHub Repos/OpenGL-tutorial/build/CMakeFiles/CMakeScratch/TryCompile-oj1476"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -2042,39 +2042,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/GitHub Repos/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-s47xgv'
+        Change Dir: 'D:/GitHub Repos/OpenGL-tutorial/build/CMakeFiles/CMakeScratch/TryCompile-oj1476'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1c6b6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e4e16.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 18-Apr-26 6:20:32 PM.
+        Build started 25-Apr-26 7:16:20 PM.
         
-        Project "D:\\GitHub Repos\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s47xgv\\cmTC_1c6b6.vcxproj" on node 1 (default targets).
+        Project "D:\\GitHub Repos\\OpenGL-tutorial\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oj1476\\cmTC_e4e16.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\GitHub Repos\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s47xgv\\Debug\\".
-          Creating directory "cmTC_1c6b6.dir\\Debug\\cmTC_1c6b6.tlog\\".
+          Creating directory "D:\\GitHub Repos\\OpenGL-tutorial\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oj1476\\Debug\\".
+          Creating directory "cmTC_e4e16.dir\\Debug\\cmTC_e4e16.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_1c6b6.dir\\Debug\\cmTC_1c6b6.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_1c6b6.dir\\Debug\\cmTC_1c6b6.tlog\\unsuccessfulbuild".
+          Creating "cmTC_e4e16.dir\\Debug\\cmTC_e4e16.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_e4e16.dir\\Debug\\cmTC_e4e16.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_1c6b6.dir\\Debug\\\\" /Fd"cmTC_1c6b6.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_e4e16.dir\\Debug\\\\" /Fd"cmTC_e4e16.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35222 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_1c6b6.dir\\Debug\\\\" /Fd"cmTC_1c6b6.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_e4e16.dir\\Debug\\\\" /Fd"cmTC_e4e16.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\GitHub Repos\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s47xgv\\Debug\\cmTC_1c6b6.exe" /INCREMENTAL /ILK:"cmTC_1c6b6.dir\\Debug\\cmTC_1c6b6.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/GitHub Repos/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-s47xgv/Debug/cmTC_1c6b6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/GitHub Repos/OpenGl/build/CMakeFiles/CMakeScratch/TryCompile-s47xgv/Debug/cmTC_1c6b6.lib" /MACHINE:X64  /machine:x64 cmTC_1c6b6.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_1c6b6.vcxproj -> D:\\GitHub Repos\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s47xgv\\Debug\\cmTC_1c6b6.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\GitHub Repos\\OpenGL-tutorial\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oj1476\\Debug\\cmTC_e4e16.exe" /INCREMENTAL /ILK:"cmTC_e4e16.dir\\Debug\\cmTC_e4e16.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/GitHub Repos/OpenGL-tutorial/build/CMakeFiles/CMakeScratch/TryCompile-oj1476/Debug/cmTC_e4e16.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/GitHub Repos/OpenGL-tutorial/build/CMakeFiles/CMakeScratch/TryCompile-oj1476/Debug/cmTC_e4e16.lib" /MACHINE:X64  /machine:x64 cmTC_e4e16.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_e4e16.vcxproj -> D:\\GitHub Repos\\OpenGL-tutorial\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oj1476\\Debug\\cmTC_e4e16.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_1c6b6.dir\\Debug\\cmTC_1c6b6.tlog\\unsuccessfulbuild".
-          Touching "cmTC_1c6b6.dir\\Debug\\cmTC_1c6b6.tlog\\cmTC_1c6b6.lastbuildstate".
-        Done Building Project "D:\\GitHub Repos\\OpenGl\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s47xgv\\cmTC_1c6b6.vcxproj" (default targets).
+          Deleting file "cmTC_e4e16.dir\\Debug\\cmTC_e4e16.tlog\\unsuccessfulbuild".
+          Touching "cmTC_e4e16.dir\\Debug\\cmTC_e4e16.tlog\\cmTC_e4e16.lastbuildstate".
+        Done Building Project "D:\\GitHub Repos\\OpenGL-tutorial\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oj1476\\cmTC_e4e16.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.49
+        Time Elapsed 00:00:00.46
         
       exitCode: 0
   -
@@ -2082,7 +2082,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
@@ -2100,7 +2100,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:5 (project)"
     message: |
       Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
       Microsoft (R) Incremental Linker Version 14.44.35222.0

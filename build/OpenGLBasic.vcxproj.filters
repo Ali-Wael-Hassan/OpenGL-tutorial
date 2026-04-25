@@ -1,60 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\GitHub Repos\OpenGl\src\core\IndexBuffer.cpp">
+    <ClCompile Include="D:\GitHub Repos\OpenGL-tutorial\src\core\IndexBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GitHub Repos\OpenGl\src\core\Renderer.cpp">
+    <ClCompile Include="D:\GitHub Repos\OpenGL-tutorial\src\core\Renderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GitHub Repos\OpenGl\src\core\Shader.cpp">
+    <ClCompile Include="D:\GitHub Repos\OpenGL-tutorial\src\core\Shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GitHub Repos\OpenGl\src\core\VertexArray.cpp">
+    <ClCompile Include="D:\GitHub Repos\OpenGL-tutorial\src\core\VertexArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GitHub Repos\OpenGl\src\core\VertexBuffer.cpp">
+    <ClCompile Include="D:\GitHub Repos\OpenGL-tutorial\src\core\VertexBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GitHub Repos\OpenGl\src\core\Window.cpp">
+    <ClCompile Include="D:\GitHub Repos\OpenGL-tutorial\src\core\Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GitHub Repos\OpenGl\main.cpp">
+    <ClCompile Include="D:\GitHub Repos\OpenGL-tutorial\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\GitHub Repos\OpenGl\include\core\IndexBuffer.h">
+    <ClInclude Include="D:\GitHub Repos\OpenGL-tutorial\include\core\IndexBuffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\GitHub Repos\OpenGl\include\core\Renderer.h">
+    <ClInclude Include="D:\GitHub Repos\OpenGL-tutorial\include\core\Renderer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\GitHub Repos\OpenGl\include\core\Shader.h">
+    <ClInclude Include="D:\GitHub Repos\OpenGL-tutorial\include\core\Shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\GitHub Repos\OpenGl\include\core\VertexArray.h">
+    <ClInclude Include="D:\GitHub Repos\OpenGL-tutorial\include\core\VertexArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\GitHub Repos\OpenGl\include\core\VertexBuffer.h">
+    <ClInclude Include="D:\GitHub Repos\OpenGL-tutorial\include\core\VertexBuffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\GitHub Repos\OpenGl\include\core\VertexBufferLayout.h">
+    <ClInclude Include="D:\GitHub Repos\OpenGL-tutorial\include\core\VertexBufferLayout.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\GitHub Repos\OpenGl\include\core\Window.h">
+    <ClInclude Include="D:\GitHub Repos\OpenGL-tutorial\include\core\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GitHub Repos\OpenGL-tutorial\include\utils\GLDebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\GitHub Repos\OpenGL-tutorial\include\utils\Logger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\GitHub Repos\OpenGl\CMakeLists.txt" />
+    <CustomBuild Include="D:\GitHub Repos\OpenGL-tutorial\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{8E645AB0-EF9D-3FAD-BD37-50A11022833B}</UniqueIdentifier>
+      <UniqueIdentifier>{386576F7-F017-3E00-AF25-EE81F5D874F1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{3C1D1C1E-4C78-3667-92FF-88ABC21C089C}</UniqueIdentifier>
+      <UniqueIdentifier>{650F7F2C-FC79-394E-B8E6-25F8BCF46CFF}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

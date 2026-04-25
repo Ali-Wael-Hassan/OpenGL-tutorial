@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"D:/GitHub Repos/OpenGl/build/cmake_install.cmake"
+		"D:/GitHub Repos/OpenGL-tutorial/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

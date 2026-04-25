@@ -57,9 +57,6 @@ int main(void)
     // Compile The Shaders
     Shader shader("src/shaders/Basic.vert", "src/shaders/Basic.frag");
 
-    // Biniding the Program
-    shader.bind();
-
     // Clean up state before the loop
     vao.unbind();
     vbo.unbind();
