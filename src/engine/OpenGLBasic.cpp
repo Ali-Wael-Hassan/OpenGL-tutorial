@@ -1,20 +1,10 @@
-#include <core/Window.h>
-#include <core/Shader.h>
-#include <core/VertexBuffer.h>
-#include <core/VertexBufferLayout.h>
-#include <core/VertexArray.h>
-#include <core/IndexBuffer.h>
-#include <core/Renderer.h>
-#include <utils/Logger.h>
-#include <GL/glew.h>
+#include <engine/OpenGLBasic.h>
 
-int main(void)
-{
+OpenGLBasic::OpenGLBasic(int width, int height, const char* title)
+    : m_Window(width, height, title) {}
+
+void OpenGLBasic::run() {
     LOG_INFO("Application Starting...");
-
-    // Create Window
-    Window window(1920, 1080, "Hello World");
-    LOG_INFO("Window created: 640x800");
 
     // Positions
     struct Range {
@@ -79,7 +69,7 @@ int main(void)
     Renderer renderer;
 
     // Main Loop
-    while(!window.shouldClose()) {
+    while(!m_Window.shouldClose()) {
         // Clear Screen
         renderer.clear();
 
@@ -87,12 +77,11 @@ int main(void)
         renderer.draw(vao, ibo, shader);
 
         // Show to the Screen
-        window.swapBuffers();
+        m_Window.swapBuffers();
 
         // Pull Events
-        window.pollEvents();
+        m_Window.pollEvents();
     }
 
     LOG_INFO("Window closing. Cleaning up...");
-    return 0;
 }

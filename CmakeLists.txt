@@ -21,8 +21,8 @@ file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS "src/*.cpp")
 # Finds all header files inside /src and /include so they show up in your IDE's file tree.
 file(GLOB_RECURSE HEADER_FILES CONFIGURE_DEPENDS "src/*.h" "include/*.h")
 
-# Merges the discovered files and your entry point (main.cpp) into one list
-set(ALL_SOURCES ${SRC_FILES} ${HEADER_FILES} "main.cpp")
+# Merges the discovered files
+set(ALL_SOURCES ${SRC_FILES} ${HEADER_FILES})
 
 # Creates the actual executable task using all the discovered source files
 add_executable(${PROJECT_NAME} ${ALL_SOURCES})

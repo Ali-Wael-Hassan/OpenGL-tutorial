@@ -6,13 +6,13 @@
 class Window {
 private:
     GLFWwindow* m_window;
-    char *m_title;
+    const char *m_title;
     int m_width;
     int m_height;
 
 public:
     // Initialize the Window
-    Window(int width, int height, char* title);
+    Window(int width, int height, const char* title);
 
     // Destroy the Window
     ~Window();
