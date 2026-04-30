@@ -41,7 +41,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE
 
 # Tells the linker which binary files (.lib) to combine with your compiled code.
 target_link_libraries(${PROJECT_NAME} PRIVATE 
-    "${CMAKE_CURRENT_SOURCE_DIR}/external/GLFW/lib/glfw3.lib"   # The GLFW static library
+    "${CMAKE_CURRENT_SOURCE_DIR}/external/GLFW/lib/libglfw3.a"   # The GLFW static library
     "${CMAKE_CURRENT_SOURCE_DIR}/external/GLEW/lib/glew32s.lib" # The GLEW static library
     opengl32.lib # Windows built-in OpenGL driver interface
     User32.lib   # Windows API for window management

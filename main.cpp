@@ -13,7 +13,7 @@ int main(void)
     LOG_INFO("Application Starting...");
 
     // Create Window
-    Window window(640, 800, "Hello World");
+    Window window(1920, 1080, "Hello World");
     LOG_INFO("Window created: 640x800");
 
     // Positions
