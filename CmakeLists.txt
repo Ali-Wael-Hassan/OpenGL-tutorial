@@ -1,15 +1,15 @@
 # Sets the minimum version of CMake required to build this project
 cmake_minimum_required(VERSION 3.15)
 
-# Names the project; this also creates the variable ${PROJECT_NAME}
+# Names the project
 project(OpenGLBasic)
 
 # Sets the default folder where the final .exe will be placed
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/bin")
 
-# Loops through all build types (Debug, Release, etc.) to ensure they all output to /bin
+# Loops through all build types to ensure they all output to /bin
 foreach(OUTPUTCONFIG ${CMAKE_CONFIGURATION_TYPES})
-    # Converts configuration name (like 'debug') to uppercase ('DEBUG') for the variable name
+    # Converts configuration name to uppercase for the variable name
     string(TOUPPER ${OUTPUTCONFIG} OUTPUTCONFIG)
     # Forces every specific build configuration to use the same /bin output folder
     set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_${OUTPUTCONFIG} "${CMAKE_CURRENT_SOURCE_DIR}/bin")
@@ -18,33 +18,56 @@ endforeach()
 # This finds all .cpp files inside the /src folder and any subfolders.
 file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS "src/*.cpp")
 
-# Finds all header files inside /src and /include so they show up in your IDE's file tree.
+# Finds all header files inside /src and /include so they show up in IDE's file tree.
 file(GLOB_RECURSE HEADER_FILES CONFIGURE_DEPENDS "src/*.h" "include/*.h")
 
 # Merges the discovered files
 set(ALL_SOURCES ${SRC_FILES} ${HEADER_FILES})
 
+# Add the sub-directory to know the output .a directory
+add_subdirectory(external/stb_image)
+
 # Creates the actual executable task using all the discovered source files
 add_executable(${PROJECT_NAME} ${ALL_SOURCES})
 
+if(CMAKE_COMPILER_IS_GNUCXX OR MINGW)
+    target_link_options(${PROJECT_NAME} PRIVATE "-static-libgcc" "-static-libstdc++" "-static")
+endif()
+
 # Adds a preprocessor macro (#define GLEW_STATIC) specifically for this project.
-# This is required because we are linking the static version of GLEW (glew32s.lib).
 target_compile_definitions(${PROJECT_NAME} PRIVATE GLEW_STATIC)
 
-# Tells the compiler where to look when it sees an #include <...> or #include "..."
+# Tells the compiler where to look
 target_include_directories(${PROJECT_NAME} PRIVATE 
     "${CMAKE_CURRENT_SOURCE_DIR}/src"      # Required so #include <core/Shader.h> can resolve
     "${CMAKE_CURRENT_SOURCE_DIR}/include"  # General project include folder
     "${CMAKE_CURRENT_SOURCE_DIR}/external/GLFW/include" # Path to GLFW's headers
     "${CMAKE_CURRENT_SOURCE_DIR}/external/GLEW/include" # Path to GLEW's headers
+    "${CMAKE_CURRENT_SOURCE_DIR}/external/stb_image/include" # Path to stb_image headers
 )
 
-# Tells the linker which binary files (.lib) to combine with your compiled code.
-target_link_libraries(${PROJECT_NAME} PRIVATE 
+# Tells the linker which binary files (.lib) to combine with the compiled code.
+target_link_libraries(${PROJECT_NAME} PRIVATE
+    stb_image    # The new static library from the /external/std_image
     "${CMAKE_CURRENT_SOURCE_DIR}/external/GLFW/lib/libglfw3.a"   # The GLFW static library
-    "${CMAKE_CURRENT_SOURCE_DIR}/external/GLEW/lib/glew32s.lib" # The GLEW static library
+    "${CMAKE_CURRENT_SOURCE_DIR}/external/GLEW/lib/glew32s.lib"  # The GLEW static library
     opengl32.lib # Windows built-in OpenGL driver interface
     User32.lib   # Windows API for window management
     Gdi32.lib    # Windows API for graphics device interface
     Shell32.lib  # Windows API for shell features
+)
+
+# Sets the debugger working directory to the /bin folder.
+set_target_properties(${PROJECT_NAME} PROPERTIES
+    VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}"
+    XCODE_ATTRIBUTE_WORKING_DIRECTORY "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}"
+)
+
+# copies the /assets folder into the /bin directory after every successful build.
+add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E make_directory "$<TARGET_FILE_DIR:${PROJECT_NAME}>/assets"
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+    "${CMAKE_CURRENT_SOURCE_DIR}/assets"
+    "$<TARGET_FILE_DIR:${PROJECT_NAME}>/assets"
+    COMMENT "Forcing asset sync to: $<TARGET_FILE_DIR:${PROJECT_NAME}>/assets"
 )

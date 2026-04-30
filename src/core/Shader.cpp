@@ -71,6 +71,19 @@ std::string Shader::readFile(const char* filePath) {
     return "";
 }
 
+int Shader::getUniformLocation(const std::string& name) const {
+    // Check if we already found this location before
+    if (m_UniformLocationCache.find(name) != m_UniformLocationCache.end())
+        return m_UniformLocationCache[name];
+
+    GLCall(int location = glGetUniformLocation(id, name.c_str()));
+    if (location == -1)
+        LOG_WARN("Uniform '" + name + "' does not exist (or was optimized out)!");
+
+    m_UniformLocationCache[name] = location;
+    return location;
+}
+
 Shader::Shader(const char * vertexPath, const char * fragmentPath) {
     // Extracting the code
     std::string vertexCode = readFile(vertexPath);
@@ -104,5 +117,13 @@ Shader::Shader(const char * vertexPath, const char * fragmentPath) {
 void Shader::bind() const { GLCall(glUseProgram(id)); }
 
 void Shader::unbind() const { GLCall(glUseProgram(0)); }
+
+void Shader::setUniform4f(const std::string& name, float v0, float v1, float v2, float v3) {
+    GLCall(glUniform4f(getUniformLocation(name), v0, v1, v2, v3));
+}
+
+void Shader::setUniform1i(const std::string& name, int value) {
+    GLCall(glUniform1i(getUniformLocation(name), value));
+}
 
 unsigned int Shader::getID() const { return id; }

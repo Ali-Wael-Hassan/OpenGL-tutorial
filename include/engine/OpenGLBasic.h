@@ -7,7 +7,10 @@
 #include <core/VertexArray.h>
 #include <core/IndexBuffer.h>
 #include <core/Renderer.h>
+#include <core/Texture.h>
 #include <utils/Logger.h>
+#include <utils/GLDebug.h>
+#include <utils/Timer.h>
 #include <GL/glew.h>
 
 class OpenGLBasic {

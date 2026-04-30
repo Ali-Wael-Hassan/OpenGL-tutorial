@@ -1,3 +1,6 @@
-.exe
-build/
-bin/
+/build/
+/bin/
+*.exe
+*.pdb
+*.obj
+.vs/

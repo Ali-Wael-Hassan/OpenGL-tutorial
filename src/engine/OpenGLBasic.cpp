@@ -19,11 +19,11 @@ void OpenGLBasic::run() {
     const Range bottomRight = { 0.5f, -0.5f};
 
     // Verticies
-    float positions[8] = {
-        topLeft.x,     topLeft.y,     // 0
-        topRight.x,    topRight.y,    // 1
-        bottomRight.x, bottomRight.y, // 2
-        bottomLeft.x,  bottomLeft.y   // 3
+    float positions[] = {
+        topLeft.x,     topLeft.y, 0.0f, 1.0f,     // 0
+        topRight.x,    topRight.y, 1.0f, 1.0f,    // 1
+        bottomRight.x, bottomRight.y, 1.0f, 0.0f, // 2
+        bottomLeft.x,  bottomLeft.y, 0.0f, 0.0f  // 3
     };
 
     // Triangles
@@ -37,12 +37,13 @@ void OpenGLBasic::run() {
     LOG_INFO("Vertex Array Object (VAO) created.");
 
     // 2. Create a Vertex Buffer (The Raw Data)
-    VertexBuffer vbo(positions, 8 * sizeof(float));
+    VertexBuffer vbo(positions, 4 * 4 * sizeof(float));
     LOG_INFO("Vertex Buffer Object (VBO) created and initialized with data.");
 
     // 3. Create a Layout (The Blueprint)
     VertexBufferLayout layout;
     layout.push<float>(2); // We are pushing 2 floats for (x, y)
+    layout.push<float>(2); // We are pushing 2 floats for (u, v)
     LOG_INFO("Buffer Layout defined: 2 Floats per vertex.");
 
     // 4. Link the Buffer and Layout to the VAO
@@ -55,24 +56,46 @@ void OpenGLBasic::run() {
 
     // Compile The Shaders
     LOG_INFO("Compiling Shaders...");
-    Shader shader("src/shaders/Basic.vert", "src/shaders/Basic.frag");
+    Shader shader("assets/shaders/Basic.vert", "assets/shaders/Basic.frag");
     LOG_INFO("Shaders linked successfully.");
-
-    // Clean up state before the loop
-    vao.unbind();
-    vbo.unbind();
-    ibo.unbind();
-    shader.unbind();
-    LOG_INFO("Initial state unbound. Entering Main Loop.");
 
     // Create the Renderer conductor
     Renderer renderer;
+
+    // Timer Setup for Animations
+    Timer timer;
+    float blueChannel = 0.0f;
+    float increment = 0.5f;
+
+    // Texture
+    Texture texture("assets/textures/test.jpeg");
+    texture.bind();
+    shader.setUniform1i("u_Texture", 0);
 
     // Main Loop
     while(!m_Window.shouldClose()) {
         // Clear Screen
         renderer.clear();
 
+        // Update Current time frame
+        timer.update();
+
+        // Use the shader for setting uniform
+        shader.bind();
+
+        // Use Delta Time to animate the color smoothly
+        blueChannel += increment * timer.getDeltaTime();
+        if (blueChannel > 1.0f) {
+            blueChannel = 1.0f;
+            increment *= -1.0f;
+        } 
+        else if (blueChannel < 0.0f) {
+            blueChannel = 0.0f;
+            increment *= -1.0f;
+        }
+
+        // Setting the uniform
+        shader.setUniform4f("u_Color", 0.2f, 0.3f, blueChannel, 1.0f);
         // Draw to the hidden buffer
         renderer.draw(vao, ibo, shader);
 
